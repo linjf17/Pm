@@ -8,7 +8,7 @@ class MyAgent(DockerAgentRunner):
     '''An example Docker agent class'''
 
     def __init__(self):
-        self._agent = agents.SimpleAgent()
+        self._agent = agents.MyAgent()
 
     def act(self, observation, action_space):
         return self._agent.act(observation, action_space)
